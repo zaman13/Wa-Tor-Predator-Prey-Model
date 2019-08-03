@@ -1,6 +1,10 @@
 # Wa-Tor-Predator-Prey-Model
 C++ SFML implementation of Wa-Tor Predator-Prey dynamics simulation. The algorithm is based on the 1984 paper by A.K. Dewdney. The simulation takes place on a toroidal space populated by fishes and sharks. The sharks hunt the fishes. By simulating over a large grid, oscillations in the populations can be observed which is a characterisitic of predator-prey models. Real-time plots of the fish and shark populations are presented alongside the evolution of the toroidal grid with time. 
 
+## Sample Output
+<img src="https://github.com/zaman13/Wa-Tor-Predator-Prey-Model/blob/master/Wa-tor-output%20screen.png" alt="alt text" width="660">
+
+
 
 ## Algorithm
 Every shark and fish has a age value and a 2D position coordinate. In addition, every shark has a *starve* value which indeicates the time elapsed after its last meal. The spawning rate of fishes and sharks are determined by the parameters *fbreed* and *sbreed*. The starving thereshold of sharks is set by the parameter *starve_max*. The movement of the fishes and sharks are controlled by simple rules:
@@ -30,9 +34,6 @@ The code requires C++ compiler and SFML.
 
 ## Running the code
 Run the __Makefile__ in the terminal. Then run the executable (__./wat-tor_output__) file. 
-
-## Sample Output
-
 
 
 ## References
