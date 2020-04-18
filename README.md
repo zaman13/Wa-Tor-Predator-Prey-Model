@@ -2,7 +2,7 @@
 C++ SFML implementation of Wa-Tor Predator-Prey dynamics simulation. The algorithm is based on the 1984 paper by A.K. Dewdney. The simulation takes place on a toroidal space populated by fishes and sharks. The sharks hunt the fishes. By simulating over a large grid, oscillations in the populations can be observed which is a characterisitic of predator-prey models. Real-time plots of the fish and shark populations are presented alongside the evolution of the toroidal grid with time. 
 
 ## Sample Output
-<img src="https://github.com/zaman13/Wa-Tor-Predator-Prey-Model/blob/master/Wa-tor-output%20screen.png" alt="alt text" width="660">
+<img src="https://github.com/zaman13/Wa-Tor-Predator-Prey-Model/blob/master/Wa-tor-output%20screen.png" alt="alt text" width="600">
 
 
 
@@ -26,7 +26,9 @@ More details about the rules can be found in Ref. [1].
 ## Implementation notes
 __1.__ If the position of fishes and sharks are updated sequentially (going through 2 nested loops with normal indexing), then a net motion of the fish schools (and sharks) can be observed. This is avoided by using random indexed nested loops.  
 
-__2.__ SFML VertexArrays are used for the visualization. This way, a single draw command show all the fish/shark population at once. This is much more efficient then drawing each cell independently which can result in very low frame rate for large grids.  
+__2.__ SFML VertexArrays are used for the visualization. This way, a single draw command show all the fish/shark population at once. This is much more efficient then drawing each cell independently which can result in very low frame rate for large grids. This makes it possible to simulate very large grids.
+
+__3.__ Run time is almost independent of grid size.
 
 
 ## Dependencies
