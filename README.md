@@ -1,4 +1,10 @@
 # Wa-Tor-Predator-Prey-Model
+<p float="left">
+<a href = "https://github.com/zaman13/Wa-Tor-Predator-Prey-Model/tree/master/Codes"> <img src="https://img.shields.io/badge/Language-C++-blue" alt="alt text"> </a>
+<a href = "https://github.com/zaman13/Wa-Tor-Predator-Prey-Model/blob/master/LICENSE"> <img src="https://img.shields.io/badge/license-MIT-green" alt="alt text"></a>
+<a href = "https://github.com/zaman13/Wa-Tor-Predator-Prey-Model/tree/master/Codes"> <img src="https://img.shields.io/badge/version-1.0-red" alt="alt text"> </a>
+</p>
+
 C++ SFML implementation of Wa-Tor Predator-Prey dynamics simulation. The algorithm is based on the 1984 paper by A.K. Dewdney. The simulation takes place on a toroidal space populated by fishes and sharks. The sharks hunt the fishes. By simulating over a large grid, oscillations in the populations can be observed which is a characterisitic of predator-prey models. Real-time plots of the fish and shark populations are presented alongside the evolution of the toroidal grid with time. 
 
 ## Sample Output
